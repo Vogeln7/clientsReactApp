@@ -5,7 +5,7 @@ export const getAllClients = async (req,res)=>{
     //get all clients
     const clients= await Client.find()
     if (!clients?.length){
-        return res.status(400).json({message:'no users found'})
+        return res.status(400).json({message:'no clients found'})
     }
     res.json(clients)
 }
