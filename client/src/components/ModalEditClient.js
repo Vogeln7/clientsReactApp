@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 
 import { Form, FormGroup } from 'react-bootstrap';
 
-function ModalEditClient({ data }) {
+function ModalEditClient({ data , getAllClients}) {
 
   const [show, setShow] = useState(false);
   const [formValues, setFormValues] = useState(
@@ -18,17 +18,17 @@ function ModalEditClient({ data }) {
     }
   )
 
-  const updateClient = async (id) => {
+  const editClient = async (id) => {
     try {
-      const { data } = await axios.put(`http://localhost:5000/clients/update/${id}`, formValues)
-      console.log(data)
+      const { data } = await axios.put(`http://localhost:5000/clients/update/${id}`, formValues)      
+      getAllClients();
     } catch (error) {
       console.log(error)
     }
     return
   }
   const handleEdit = (e) => {
-    updateClient(data._id)
+    editClient(data._id)
     handleClose()
   }
 

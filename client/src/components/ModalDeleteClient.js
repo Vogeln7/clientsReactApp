@@ -5,13 +5,14 @@ import Modal from 'react-bootstrap/Modal';
 
 
 
-function ModalDeleteClient({clientId}) {
+function ModalDeleteClient({clientId , getAllClients}) {
     
     const [show, setShow] = useState(false);
 
   const deleteClient=async(id)=>{
     try {
         const {data}= await axios.delete(`http://localhost:5000/clients/delete/${id}`)
+        getAllClients();
         console.log(data)
     } catch (error) {
         console.log(error)

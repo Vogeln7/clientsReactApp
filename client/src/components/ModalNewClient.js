@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import { Form, FormGroup } from 'react-bootstrap';
 import Swal from 'sweetalert2'
 
-function ModalNewClient() {
+function ModalNewClient({getAllClients}) {
     
     const [show, setShow] = useState(false);
     const [formValues, setFormValues] = useState(
@@ -24,6 +24,7 @@ function ModalNewClient() {
             const response  = await axios.post(`http://localhost:5000/clients/new`, formValues)
                      
             if (response.status===200){
+                getAllClients();
                 Swal.fire('Success!',`Client ${response.data.firstname} successfully created!`,'success')                
             }           
         } catch (error) {

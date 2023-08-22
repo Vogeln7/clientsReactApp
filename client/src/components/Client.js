@@ -3,7 +3,7 @@ import ModalEditClient from "./ModalEditClient";
 import ModalDeleteClient from "./ModalDeleteClient";
 
 
-function Client ({clientData}) {
+function Client ({clientData,getAllClients}) {
     
     const data={...clientData}    
     return <tr key={data._id}>
@@ -14,8 +14,8 @@ function Client ({clientData}) {
     <td>{data.dni}</td>
     <td>{data.phoneNumber}</td>
     <td>
-      <ModalEditClient data={data}/>
-      <ModalDeleteClient clientId={data._id}/>
+      <ModalEditClient data={data} getAllClients={getAllClients}/>
+      <ModalDeleteClient clientId={data._id} getAllClients={getAllClients}/>
     </td>
   </tr>
 }
