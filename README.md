@@ -35,7 +35,7 @@ We are going to enter each of them with a terminal (two different terminals) it 
    cd client
    ```   
    ```sh
-   cd cd server 
+   cd server 
    ``` 
 3. In each of these terminals we are going to install the dependencies of the project.
    ```sh
