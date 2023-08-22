@@ -11,7 +11,7 @@ function ModalDeleteClient({clientId , getAllClients}) {
 
   const deleteClient=async(id)=>{
     try {
-        const {data}= await axios.delete(`http://localhost:5000/clients/delete/${id}`)
+        const {data}= await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/clients/delete/${id}`)
         getAllClients();
         console.log(data)
     } catch (error) {

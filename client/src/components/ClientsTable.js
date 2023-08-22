@@ -3,6 +3,7 @@ import Client from './Client';
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ModalNewClient from './ModalNewClient';
+import Swal from 'sweetalert2'
 
 function ClientsTable() {
   
@@ -18,7 +19,8 @@ function ClientsTable() {
     }else{      
       let filtered = clients.filter(client=>{        
         return client.dni.includes(value)        
-      })      
+      })
+      if (filtered.length===0){Swal.fire(`Doesn't find any match`)}    
       setFilteredClients(filtered)
     }
     return
@@ -26,7 +28,7 @@ function ClientsTable() {
     
     const getAllClients= async ()=>{
         try {
-            const {data} = await axios.get(`http://localhost:5000/clients/all`);
+            const {data} = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/clients/all`);
             setClients(data)
             setFilteredClients(data)                    
         } catch (error) {

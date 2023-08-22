@@ -21,7 +21,7 @@ function ModalNewClient({getAllClients}) {
     const saveNewClient = async () => {
         
         try {
-            const response  = await axios.post(`http://localhost:5000/clients/new`, formValues)
+            const response  = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/clients/new`, formValues)
                      
             if (response.status===200){
                 getAllClients();

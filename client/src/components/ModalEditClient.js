@@ -20,7 +20,7 @@ function ModalEditClient({ data , getAllClients}) {
 
   const editClient = async (id) => {
     try {
-      const { data } = await axios.put(`http://localhost:5000/clients/update/${id}`, formValues)      
+      await axios.put(`${process.env.REACT_APP_BACKEND_URL}/clients/update/${id}`, formValues)      
       getAllClients();
     } catch (error) {
       console.log(error)
