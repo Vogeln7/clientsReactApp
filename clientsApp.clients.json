@@ -1,0 +1,143 @@
+[{
+  "_id": {
+    "$oid": "64e29ba2537c80606b8c1e8f"
+  },
+  "firstname": "asdasdhhh",
+  "lastname": "Maderita",
+  "dni": "37555665",
+  "sex": "Femenino",
+  "phoneNumber": "+543519856588",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37a7bc5c63663b9fa0b5e"
+  },
+  "firstname": "Paola",
+  "lastname": "Argento",
+  "dni": "25999666",
+  "sex": "femenino",
+  "phoneNumber": "+543515666999",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37a92c5c63663b9fa0b61"
+  },
+  "firstname": "Coki",
+  "lastname": "Argento",
+  "dni": "23555888",
+  "sex": "masculino",
+  "phoneNumber": "+543515666777",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37ad4c5c63663b9fa0b64"
+  },
+  "firstname": "Pepe",
+  "lastname": "Argento",
+  "dni": "13555222",
+  "sex": "Femenino",
+  "phoneNumber": "+541196333555",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3ac78c5c63663b9fa0bbb"
+  },
+  "firstname": "Cesar",
+  "lastname": "Madera",
+  "dni": "15222555",
+  "sex": "Masculino",
+  "phoneNumber": "+543525478599",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3ae70c5c63663b9fa0bbf"
+  },
+  "firstname": "Mateo",
+  "lastname": "Madera",
+  "dni": "42555888",
+  "sex": "Masculino",
+  "phoneNumber": "+543525889966",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c8bec5c63663b9fa0bf7"
+  },
+  "firstname": "Agustín",
+  "lastname": "Avila",
+  "dni": "38555633",
+  "sex": "Masculino",
+  "phoneNumber": "+543513898798",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3f62a8cb0b71a195267f0"
+  },
+  "firstname": "asdasdas",
+  "lastname": "asdasdas",
+  "dni": "654654564654",
+  "sex": "Masculino",
+  "phoneNumber": "564564654654",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3ff388cb0b71a1954fdc7"
+  },
+  "firstname": "Juan",
+  "lastname": "Avalo",
+  "dni": "37522699",
+  "sex": "Masculino",
+  "phoneNumber": "+543515656565",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e404db8cb0b71a195530eb"
+  },
+  "firstname": "juan",
+  "lastname": "nuevop",
+  "dni": "564654",
+  "sex": "Masculino",
+  "phoneNumber": "65456456",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e40dc68cb0b71a1955731d"
+  },
+  "firstname": "Benjamin",
+  "lastname": "Torres",
+  "dni": "37222111",
+  "sex": "Masculino",
+  "phoneNumber": "3512666888",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e4139f8cb0b71a19557323"
+  },
+  "firstname": "frranco",
+  "lastname": "pautasso",
+  "dni": "5465456456",
+  "sex": "Masculino",
+  "phoneNumber": "564564564654",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e420f98cb0b71a19557367"
+  },
+  "firstname": "asdasdas",
+  "lastname": "asdas",
+  "dni": "45645645",
+  "sex": "Masculino",
+  "phoneNumber": "645645645",
+  "__v": 0
+}]
